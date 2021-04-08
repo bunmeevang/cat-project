@@ -20,9 +20,9 @@ function Cat() {
         })
     }
     return (
-        <div className="cat-main">
-            <img alt='text' src={url} className="cat-url"/>
-            <button className="cat-button" onClick={fetch_data}>Generate Cats</button>
+        <div className="catMain">
+            <img alt='text' src={url} className="catUrl"/>
+            <button className="catButton" onClick={fetch_data}>Generate Cats</button>
         </div>
     )
 }

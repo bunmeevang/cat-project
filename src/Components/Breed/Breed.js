@@ -7,13 +7,18 @@ function Breed() {
     const [ breedUrl, setBreedUrl ] = useState([])
 
     function fetch_data(){
-        fetch(url).then(res=>{
+        fetch(url, {
+            headers: {
+                'x-api-key': '8ce8c2fe-3566-47a6-80bb-8e8492cc8ac2'
+            }
+        }).then(res=>{
             if(res.ok){
                 return res.json();
             }
             throw new Error('Request Failed')
         },networkError=> console.log(networkError.message)
         ).then(jsonRes=>{
+            console.log(jsonRes)
             setBreedUrl(jsonRes)
         })
     }
@@ -28,8 +33,8 @@ function Breed() {
             {breedUrl.map((breed, i) => {
                 return (
                     <div key={i}>
-                        <Link to={`/breed/${breed.id}`}>
-                            <h2>Hello</h2>
+                        <Link to={`/${breed.id}`}>
+                            <h2>{breed.name}</h2>
                         </Link>
                         
                     </div>    

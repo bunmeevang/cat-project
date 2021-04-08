@@ -6,6 +6,7 @@ import './App.css';
 import Cat from './Components/Cat/Cat';
 import Header from './Components/Header/Header';
 import Breed from './Components/Breed/Breed';
+import Content from "./Components/Content/Content";
 import { useEffect, useState } from 'react';
 
 // Save the Component, key and path in an array of objects for each Route
@@ -40,19 +41,20 @@ function App() {
   return (
     <div className="App">
       <Router>
+        {/* <Content /> */}
         <Header />
+        <Link to="/">Home</Link>
         <Cat />
-        <Breed />
         <Switch>
-          <Route path="/breed" component={Breed} />
           {/* <Route path="/Breed" render={(props) => <Breed {...props} />} /> */}
+          <Route exact path="/" component={Breed} />
           <Route
-            path="/breed/:id"
+            path="/:id"
             render={(FunCat) => {
               console.log(FunCat);
-              return <Breed {...FunCat} breed={FunCat.match.params.id} />;
+              return <Content {...FunCat} breed={FunCat.match.params.id} />;
             }}
-          />
+            />
         </Switch>
       </Router>
     </div>
