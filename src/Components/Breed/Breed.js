@@ -18,7 +18,7 @@ function Breed() {
             throw new Error('Request Failed')
         },networkError=> console.log(networkError.message)
         ).then(jsonRes=>{
-            console.log(jsonRes)
+            // console.log(jsonRes)
             setBreedUrl(jsonRes)
         })
     }

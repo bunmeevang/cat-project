@@ -9,50 +9,48 @@ import Breed from './Components/Breed/Breed';
 import Content from "./Components/Content/Content";
 import { useEffect, useState } from 'react';
 
-// Save the Component, key and path in an array of objects for each Route
-// You could write all routes by hand but I'm lazy annd this lets me use
-// the map method to just loop over them and make my routes
-// SWITCH is used so that it only ever matches one route at a time
-// If you don't want to use react router just rewrite the app component to not use it
-
-// const routes = [
-//   {
-//     Component: Other,
-//     key: 'Other',
-//     path: '/other'
-//   },
-//   {
-//     Component: Other,
-//     key: 'Another',
-//     path: '/another'
-//   },
-//   {
-//     Component: Home,
-//     key: 'Home',
-//     path: '/'
-//   }
-// ]
-
-
-
-
+const url = 'https://api.thecatapi.com/v1/breeds';
 
 function App() {
+  const [ breedUrl, setBreedUrl ] = useState([])
+
+  function fetch_data(){
+      fetch(url, {
+          headers: {
+              'x-api-key': '8ce8c2fe-3566-47a6-80bb-8e8492cc8ac2'
+          }
+      }).then(res=>{
+          if(res.ok){
+              return res.json();
+          }
+          throw new Error('Request Failed')
+      },networkError=> console.log(networkError.message)
+      ).then(jsonRes=>{
+          // console.log(jsonRes)
+          setBreedUrl(jsonRes)
+      })
+  }
+
+  useEffect(()=>{
+      fetch_data()
+      }, []);
+
   return (
     <div className="App">
       <Router>
-        {/* <Content /> */}
         <Header />
         <Link to="/">Home</Link>
         <Cat />
         <Switch>
-          {/* <Route path="/Breed" render={(props) => <Breed {...props} />} /> */}
           <Route exact path="/" component={Breed} />
           <Route
             path="/:id"
             render={(FunCat) => {
               console.log(FunCat);
-              return <Content {...FunCat} breed={FunCat.match.params.id} />;
+              const breedData = [...breedUrl].filter(
+                (p) => p.id === FunCat.match.params.id
+              );console.log(breedData)
+              return <Content {...FunCat} breed={breedData[0]} />;
             }}
             />
         </Switch>
