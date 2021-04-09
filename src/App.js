@@ -40,9 +40,11 @@ function App() {
       <Router>
         <Header />
         <Link to="/">Home</Link>
-        <Cat />
+        <Link to="/breed">Breeds</Link>
+        {/* <Cat /> */}
         <Switch>
-          <Route exact path="/" component={Breed} />
+          <Route exact path="/" component={Cat} />
+          <Route exact path="/breed" component={Breed} />
           <Route
             path="/:id"
             render={(FunCat) => {
