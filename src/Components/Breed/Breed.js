@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { Link } from 'react-router-dom';
+import './Breed.css';
 
 const url = 'https://api.thecatapi.com/v1/breeds';
 
@@ -29,14 +30,14 @@ function Breed() {
 
     return (
         <div>
-            <h2>Cat Breeds</h2>
+            <h2 className="catBreeds">Cat Breeds</h2>
             {breedUrl.map((breed, i) => {
                 return (
                     <div key={i}>
-                        <Link to={`/${breed.id}`}>
+                        <Link to={`/${breed.id}`} className="breedId">
 
 
-                            <h2>{breed.name}</h2>
+                            <h2 className="breed">{breed.name}</h2>
                         </Link>
                         
                     </div>    

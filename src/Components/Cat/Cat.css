@@ -22,7 +22,7 @@
   .catButton {
     position:relative;
     color: black;
-    background: radial-gradient(ellipse at center, white 0%, gray 100%);
+    background: radial-gradient(ellipse at center, white 0%, orange 100%);
     border-radius: 5px 5px;
     padding: 15px 32px;
     margin: 20px 20px;

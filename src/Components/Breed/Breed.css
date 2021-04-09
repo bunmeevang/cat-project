@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.breed {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: orange;
+    font-size: 20px; 
+    height: 60px; 
+    width:120px;
+    border: 1px dashed;
+}
+
+.catBreeds {
+    font-size: 35px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.breedId {
+    text-decoration: none;
+    margin: 0px 0px;
+    display: flex block;
+    height:65px; 
+    width:120px;
+    padding: 0px 0px;
+    align-items: row;
+}
+
+

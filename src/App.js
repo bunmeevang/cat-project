@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Route, Switch, Link} from 'react-router-dom'
+import { HashRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css';
 import Cat from './Components/Cat/Cat';
 import Header from './Components/Header/Header';

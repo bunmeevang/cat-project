@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
 .header-main {
-    background-color: black;
-    color:white;
-  }
+  display: flex;
+  color:white;
+  flex-direction: column;
+  margin: 10px 10px;
+  background-color:#66a3ff;
+  background:
+  radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+  radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+  background-color: orangered;
+  background-size:75px 100px;
+}
+
+.cats {
+  font-family: 'Kiwi Maru', serif;
+  font-size: 40px;
+}
+
+.homeLink, .breedLink{
+  font-family: 'Kiwi Maru', serif;
+  color: white;
+  text-decoration: none;
+}
+
