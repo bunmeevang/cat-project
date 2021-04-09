@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
-import { Route, Redirect} from "react-router-dom";
-// import Breed from "./Components/Breed/Breed";
+import React from "react";
+import './Content.css'
+
 
 export default function Content({breed}) {
 if (breed === undefined) {
@@ -9,7 +9,7 @@ if (breed === undefined) {
     return (
         <div className="content">
             <img alt='text' src={breed.image.url} className="catImage"/>
-            <h2>{breed.name}</h2>
+            <h2 className="breedName">{breed.name}</h2>
             <p>Description: {breed.description}</p>
             <p>Adaptability: {breed.adaptability}/5</p>
             <p>Affection level: {breed.affection_level}/5</p>

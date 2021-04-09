@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { Link } from 'react-router-dom'
-import Cat from '../Cat/Cat';
+import { Link } from 'react-router-dom';
 
 const url = 'https://api.thecatapi.com/v1/breeds';
 
@@ -35,6 +34,7 @@ function Breed() {
                 return (
                     <div key={i}>
                         <Link to={`/${breed.id}`}>
+
 
                             <h2>{breed.name}</h2>
                         </Link>

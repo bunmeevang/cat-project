@@ -1,7 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Route, Switch, Link, BrowserRouter, Redirect } from 'react-router-dom'
-// import Other from './Other'
-// import Home from './Home'
+import { HashRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import './App.css';
 import Cat from './Components/Cat/Cat';
 import Header from './Components/Header/Header';
@@ -39,8 +37,8 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Link to="/">Home</Link>
-        <Link to="/breed">Breeds</Link>
+        {/* <Link to="/">Home</Link>
+        <Link to="/breed">Breeds</Link> */}
         {/* <Cat /> */}
         <Switch>
           <Route exact path="/" component={Cat} />
