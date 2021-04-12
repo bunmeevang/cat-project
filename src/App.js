@@ -47,10 +47,10 @@ function App() {
           <Route
             path="/:id"
             render={(FunCat) => {
-              console.log(FunCat);
+              // console.log(FunCat);
               const breedData = [...breedUrl].filter(
                 (p) => p.id === FunCat.match.params.id
-              );console.log(breedData)
+               ); //console.log(breedData)
               return <Content {...FunCat} breed={breedData[0]} />;
             }}
             />
