@@ -23,6 +23,7 @@ function Cat() {
         <div className="catMain">
             <img alt='text' src={url} className="catUrl"/>
             <button className="catButton" onClick={fetch_data}>More Cats</button>
+            <p className="homeDes">Enjoy all the awesome pictures of the cat and check out all the cool different cat breeds too.</p>
         </div>
     )
 }

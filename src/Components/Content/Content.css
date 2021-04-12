@@ -2,20 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 .breedName {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
     font-size: 30px;
+    color: white;
 }
 
 p {
     font-family: 'Varela Round', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
+    /* margin-top: -20px; */
+    width: 600px;
+    color: white;
 }
 
+.catImage{
+    margin-top: 40px;
+    box-shadow: 0px 0px 15px blueviolet;
+}
 
-.borderBox {
-    /* border: 1px solid blue; */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DesBox {
+    width: 600px;
+}
+
+/* .borderBox {
     margin: 20px 20px;
+    margin-top: -10px;
     display: grid;  
-}
+    border-radius: 30px 30px;
+} */

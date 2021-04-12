@@ -4,6 +4,7 @@ import './App.css';
 import Cat from './Components/Cat/Cat';
 import Header from './Components/Header/Header';
 import Breed from './Components/Breed/Breed';
+import Footer from './Components/Footer/Footer'
 import Content from "./Components/Content/Content";
 import { useEffect, useState } from 'react';
 
@@ -54,6 +55,7 @@ function App() {
             }}
             />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

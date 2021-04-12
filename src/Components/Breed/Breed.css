@@ -6,7 +6,7 @@
     font-family: 'Varela Round', sans-serif;
     color: white;
     display: block;
-    font-size: 29px;
+    font-size: 30px;
     height: 65px;
     width: 120px;
     text-shadow: 0px 0px 2px black;
@@ -50,7 +50,7 @@
     background: url(https://media.istockphoto.com/vectors/set-of-black-cat-icons-vector-id1124670239?k=6&m=1124670239&s=612x612&w=0&h=ryViT97NPXv2iM7CsuJRp4z2GKl3VwpT9N5nj4-bTP8=);
     background-size: 52.5%;
     background-position-x: -5%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* background-repeat: no-repeat; */
 }
 
