@@ -12,5 +12,5 @@ My app is called CatApps. It's a cat app for people who love and adore cats. If 
 2. https://api.thecatapi.com/v1/breeds
 3. https://api.thecatapi.com/v1/images/search
   
-# Contribution Guidelines
+# Future update
 I would like to later in the future to enable the user to upvote or downvote on the random cat photos. I would also like to enable the user to save the photos of their favorite images and gif. Adding a search bar so you can look up a cat breed.  
