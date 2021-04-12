@@ -15,9 +15,10 @@
   min-width: 1024px;
   width: 100%;
   height: auto;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
+  /* bottom: -50px; */
 }
 
 .App-logo {

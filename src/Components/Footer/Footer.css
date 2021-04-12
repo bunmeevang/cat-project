@@ -1,14 +1,14 @@
-.footer-main {
+/* .footer-main {
     display: flex;
     color:white;
     justify-content: center;
     margin: 0px 20px;
-    /* background-color:#66a3ff; */
-    /* background:
+    background-color:#66a3ff; 
+    background:
     radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
     radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
     background-color: orangered;
-    background-size:75px 100px; */
+    background-size:75px 100px;
     border-radius: 10px 10px;
     background: url(https://wallpaperaccess.com/full/225026.jpg);
     background-size: 100%;
@@ -24,4 +24,4 @@
 
   p {
     text-align: center;
-  }
+  } */
