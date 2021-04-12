@@ -22,7 +22,7 @@ function Cat() {
     return (
         <div className="catMain">
             <img alt='text' src={url} className="catUrl"/>
-            <button className="catButton" onClick={fetch_data}>Generate Cats</button>
+            <button className="catButton" onClick={fetch_data}>More Cats</button>
         </div>
     )
 }

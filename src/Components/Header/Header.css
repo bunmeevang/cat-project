@@ -5,22 +5,35 @@
   color:white;
   flex-direction: column;
   margin: 10px 10px;
-  background-color:#66a3ff;
-  background:
+  /* background-color:#66a3ff; */
+  /* background:
   radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
   radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
   background-color: orangered;
-  background-size:75px 100px;
+  background-size:75px 100px; */
+  border-radius: 30px 30px;
+  background: url(https://wallpaperaccess.com/full/876271.jpg);
+  background-size: 38%;
+  background-position-x: -12%;
 }
 
 .cats {
   font-family: 'Kiwi Maru', serif;
-  font-size: 40px;
+  font-size: 50px;
+  -webkit-text-stroke: 0.1px black;
 }
 
 .homeLink, .breedLink{
+  display: block;
   font-family: 'Kiwi Maru', serif;
   color: white;
   text-decoration: none;
 }
 
+.homeLink:hover, .breedLink:hover{
+  display: block;
+  font-family: 'Kiwi Maru', serif;
+  color: yellow;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px lightblue;
+}

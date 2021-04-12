@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 .breedName {
     text-align: center;
     font-family: 'Varela Round', sans-serif;
     font-size: 30px;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.borderBox {
+    /* border: 1px solid blue; */
+    margin: 20px 20px;
+    display: grid;  
 }

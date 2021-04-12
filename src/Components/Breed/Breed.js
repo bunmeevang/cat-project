@@ -31,18 +31,18 @@ function Breed() {
     return (
         <div>
             <h2 className="catBreeds">Cat Breeds</h2>
+            <div className="breed2">
             {breedUrl.map((breed, i) => {
                 return (
                     <div key={i}>
                         <Link to={`/${breed.id}`} className="breedId">
-
-
                             <h2 className="breed">{breed.name}</h2>
                         </Link>
                         
                     </div>    
                 )
             })}      
+            </div>
         </div>
     )
 }
