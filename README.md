@@ -1,5 +1,5 @@
 # Description 
-This project is about cats and cat breed. If you love cats and looking at pictures of cat then this is the App for you. What motivated me to choose cat for my project was my three cat at home. I never knew i would be such a cat lover until i met my first little kitty.
+My app is called CatApps. It's a cat app for people who love and adore cats. If you're wondering what kind of cat you may have you can check out the Breed category of this app. User can click the "more cat" button in home page to get random images and gif of all sorts of cats.
 
 # Technologies Used
 1. Javascript
@@ -7,7 +7,10 @@ This project is about cats and cat breed. If you love cats and looking at pictur
 3. HTML
 4. React
 
-# Api 
-1. https://api.thecatapi.com/v1/breeds
-2. https://api.thecatapi.com/v1/images/search
+# Api
+1. https://thecatapi.com/
+2. https://api.thecatapi.com/v1/breeds
+3. https://api.thecatapi.com/v1/images/search
   
+# Contribution Guidelines
+I would like to later in the future to enable the user to upvote or downvote on the random cat photos. I would also like to enable the user to save the photos of their favorite images and gif. Adding a search bar so you can look up a cat breed.  
